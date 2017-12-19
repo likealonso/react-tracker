@@ -89,7 +89,7 @@ class Board extends Component {
 
     render() {
         return (
-            <div className="board">
+            <div className="container">
                 <AddTask 
                     updateTask={this.handleNewTaskUpdate}
                     updateDescription={this.handleNewTaskDescription}

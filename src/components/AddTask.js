@@ -5,8 +5,9 @@ class AddTask extends Component {
         return (
             <div className="lane">
                 <form onSubmit={(e)=> {this.props.newSubmission(e)}}>
+                    
                         <label>
-                            Title:
+                            <p>Title:</p>
                             <input 
                                 type='text'
                                 onChange= {(e) => {this.props.updateTask(e)}}
@@ -14,16 +15,16 @@ class AddTask extends Component {
                             />
                         </label>
                         <br/>
-                        <label>
-                            Description:
+                        <label className="form-group">
+                            <p>Description:</p>
                             <input  
                                 type="text"
                                 onChange={(e) => {this.props.updateDescription(e)}}
                                 value={this.props.newDescription} 
                             />
-                        </label>
+                        </label><br/>
                         <input type="submit" value="Submit" />
-                        
+                    
                 </form>
 
             </div>

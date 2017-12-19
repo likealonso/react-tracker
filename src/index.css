@@ -15,9 +15,15 @@ body {
 .task {
   border: 1px solid black;
   margin: 2px;
-  padding: 8px;
+  padding: 0px 20px 10px 20px
 }
 
 .lane-header {
   text-align: center;
+}
+
+.label {
+  display: inline-block;
+  width: 180px;
+  text-align: right
 }
